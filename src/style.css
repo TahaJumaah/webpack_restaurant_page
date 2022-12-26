@@ -19,7 +19,21 @@ body{
 }
 
 .main-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     background-color: rgb(78, 163, 163);
     height: 100px;
     width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 100%;
 }

@@ -1,6 +1,8 @@
+/* eslint-disable max-len */
 document.body.id = 'body';
-export default function createElement(elementTag, parentID, className, idName, heightPercent, widthPercent) {
-  const newElement = document.createElement(elementTag);
+let newElement = '';
+export default function createElement(elementTag, parentID, className, idName, heightPercent, widthPercent, insideText) {
+  newElement = document.createElement(elementTag);
   if (className !== '') {
     newElement.classList = className;
   }
@@ -17,4 +19,8 @@ export default function createElement(elementTag, parentID, className, idName, h
   if (widthPercent !== '') {
     newElement.style.width = `${widthPercent}%`;
   }
+  if (insideText !== undefined) {
+    newElement.innerText = insideText;
+  }
+  return newElement;
 }
