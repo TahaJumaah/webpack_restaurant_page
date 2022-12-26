@@ -1,0 +1,25 @@
+.hello{
+    color: red;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    width: 99vw;
+
+}
+
+#content{
+    background-color: rgb(158, 110, 110);
+    height: 100px;
+    width: 100px;
+}
+
+.main-content{
+    background-color: rgb(78, 163, 163);
+    height: 100px;
+    width: 100%;
+}
