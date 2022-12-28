@@ -1,5 +1,8 @@
 import createElement from './create_elements';
-import margheritaPizza from '../assets/pizza1.png';
+import margheritaPizza from '../assets/margherita.png';
+import BBQChickenPizza from '../assets/BBQ_Chicken.png';
+import broccoliPizza from '../assets/Broccoli.png';
+import pepperoniPizza from '../assets/Pepperoni.png';
 
 export default function menuFunction() {
   const menuButton = document.getElementById('menu');
@@ -11,30 +14,34 @@ export default function menuFunction() {
       if (index === 1) {
         const thisElement = document.getElementById(`menu-item${index}`);
         createElement('p', thisElement.id, 'pizza-name', '', 20, 100, 'Chicago Style Pizza');
-        createElement('img', thisElement.id, 'pizza-img', `pizza${index}`, 80, 100);
+        createElement('div', thisElement.id, 'pizza-img-cont', `pizza-img-cont${index}`);
+        createElement('img', `pizza-img-cont${index}`, 'pizza-img', `pizza${index}`, '', '');
         const thisPizza = document.getElementById(`pizza${index}`);
         thisPizza.src = margheritaPizza;
       }
       if (index === 2) {
         const thisElement = document.getElementById(`menu-item${index}`);
         createElement('p', thisElement.id, 'pizza-name', '', 20, 100, 'New-York Style Pizza');
-        createElement('img', thisElement.id, 'pizza-img', `pizza${index}`, 80, 100);
+        createElement('div', thisElement.id, 'pizza-img-cont', `pizza-img-cont${index}`);
+        createElement('img', `pizza-img-cont${index}`, 'pizza-img', `pizza${index}`, '', '');
         const thisPizza = document.getElementById(`pizza${index}`);
-        thisPizza.src = margheritaPizza;
+        thisPizza.src = BBQChickenPizza;
       }
       if (index === 3) {
         const thisElement = document.getElementById(`menu-item${index}`);
         createElement('p', thisElement.id, 'pizza-name', '', 20, 100, 'Margherita Pizza');
-        createElement('img', thisElement.id, 'pizza-img', `pizza${index}`, 80, 100);
+        createElement('div', thisElement.id, 'pizza-img-cont', `pizza-img-cont${index}`);
+        createElement('img', `pizza-img-cont${index}`, 'pizza-img', `pizza${index}`, '', '');
         const thisPizza = document.getElementById(`pizza${index}`);
-        thisPizza.src = margheritaPizza;
+        thisPizza.src = broccoliPizza;
       }
       if (index === 4) {
         const thisElement = document.getElementById(`menu-item${index}`);
         createElement('p', thisElement.id, 'pizza-name', '', 20, 100, 'California Style Pizza');
-        createElement('img', thisElement.id, 'pizza-img', `pizza${index}`, 80, 100);
+        createElement('div', thisElement.id, 'pizza-img-cont', `pizza-img-cont${index}`);
+        createElement('img', `pizza-img-cont${index}`, 'pizza-img', `pizza${index}`, '', '');
         const thisPizza = document.getElementById(`pizza${index}`);
-        thisPizza.src = margheritaPizza;
+        thisPizza.src = pepperoniPizza;
       }
     }
   });

@@ -1,5 +1,7 @@
-.hello{
-    color: red;
+@font-face {
+    font-family: 'Pacifico';
+    src: url(../assets/fonts/Pacifico-Regular.ttf);
+    font-style: normal;
 }
 
 body{
@@ -9,23 +11,29 @@ body{
     flex-direction: column;
     height: 95vh;
     width: 99vw;
+    background-color: rgb(129, 129, 129);
 
 }
 
 #content{
-    background-color: rgb(158, 110, 110);
+    background-color: rgb(129, 129, 129);
     height: 100px;
     width: 100px;
 
+}
+.pizza-img{
+    height: 200px;
+    width: 200px;
 }
 
 .main-content{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(78, 163, 163);
-    height: 100px;
-    width: 100%;
+    background-color: rgb(129, 129, 129);
+    /* height: 100px;
+    width: 100%; */
 
 }
 
@@ -35,16 +43,67 @@ body{
     align-content: center;
     align-items: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 35px;
     font-weight: bold;
     line-height: 100%;
+    font-family: 'Pacifico';
+
 }
 
 .menu-item{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     justify-items: center;
     text-align: center;
+    font-size: 30px;
+    font-family: 'Pacifico';
 }
+
+.about-us-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us-p{
+    text-align: center;
+    font-size: 25px;
+    
+}
+.rest-name-p{
+    font-size: 70px;
+    font-family: 'Pacifico';
+
+}
+
+#locations-header{
+    text-align: center;
+    font-size: 70px;
+    font-family: 'Pacifico';
+}
+
+.locations-place{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Pacifico';
+    font-size: 30px;
+    background-color: transparent;
+}
+
+#iraq {
+  background: linear-gradient(#cd1125 33%, #fff 33%, #fff 66%, #000 0);
+  display: grid;
+  place-items: center;
+  width: 300px;
+  height: 200px;
+  color: rgb(0, 92, 0);
+  font-weight: bolder;
+}
+
+
