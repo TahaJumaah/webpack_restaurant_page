@@ -1,5 +1,5 @@
 import createElement from './create_elements';
-import margheritaPizza from '../assets/margherita.png';
+import margheritaPizza from '../assets/Margherita.png';
 import BBQChickenPizza from '../assets/BBQ_Chicken.png';
 import broccoliPizza from '../assets/Broccoli.png';
 import pepperoniPizza from '../assets/Pepperoni.png';
